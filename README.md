@@ -21,38 +21,7 @@ Each agent focuses on a specific domain:
 The system combines all outputs into a **single institutional-grade trading decision**.
 
 ---
-
-## 🧠 System Architecture
-
-QuantMind uses a **multi-agent pipeline architecture**:
-User Input (Stock Symbol)
-↓
-┌──────────────────────────────┐
-│ Parallel AI Agents │
-├──────────────────────────────┤
-│ • Market Agent │
-│ • Technical Agent │
-│ • Fundamental Agent │
-│ • News Agent │
-└──────────────────────────────┘
-↓
-┌──────────────────────────────┐
-│ Quantitative Modules │
-├──────────────────────────────┤
-│ • RSI (Alpha Vantage) │
-│ • MACD (Custom Calc) │
-│ • SMA (Trend) │
-│ • Support/Resistance │
-└──────────────────────────────┘
-↓
-┌──────────────────────────────┐
-│ Decision Engine │
-├──────────────────────────────┤
-│ • Risk Analysis Chain │
-│ • Sentiment Chain │
-│ • Conflict Resolver │
-│ • Final Decision Agent │
-└──────────────────────────────┘                                                                                                                      
+                                                                                                                    
 
 📊 Unified Investment Verdict (BUY / SELL / HOLD)
 
