@@ -1,12 +1,12 @@
 from langchain.tools import tool
 from tavily import TavilyClient
 import os
-from dotenv import  load_dotenv
 from utils import get_stock_price , get_rsi , get_fundamentals
+import streamlit as st
 
-load_dotenv()
 
-tavily = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
+
+tavily = TavilyClient(api_key=st.secrets["TAVILY_API_KEY"])
 
 @tool
 def market_tool(symbol: str) -> str:

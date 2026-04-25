@@ -1,10 +1,9 @@
 import yfinance as yf
 import requests
 import os
-from dotenv import load_dotenv
-load_dotenv()
+import streamlit as st
 
-ALPHA_KEY = os.getenv("ALPHA_VANTAGE_API_KEY")
+ALPHA_KEY = st.secrets["ALPHA_VANTAGE_API_KEY"]
 
 def get_stock_price(symbol: str):
     stock = yf.Ticker(symbol)

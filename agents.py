@@ -4,8 +4,13 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
 from tools import market_tool , technical_tool , fundamental_tool , news_tool
+import streamlit as st
 
-llm = ChatMistralAI(model = "mistral-small-2506" , temperature=0)
+llm = ChatMistralAI(
+    model="mistral-small-2506",
+    temperature=0,
+    api_key=st.secrets["MISTRAL_API_KEY"]
+)
 
 # -- AGENTS --
 
